@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="OperaDivision" type="tns:OperaDivision"/>
+
+<xs:element name="OperaDivisionResponse" type="tns:OperaDivisionResponse"/>
+
+<xs:element name="OperaMulti" type="tns:OperaMulti"/>
+
+<xs:element name="OperaMultiResponse" type="tns:OperaMultiResponse"/>
+
+<xs:element name="OperaResta" type="tns:OperaResta"/>
+
+<xs:element name="OperaRestaResponse" type="tns:OperaRestaResponse"/>
+
+<xs:element name="OperaSuma" type="tns:OperaSuma"/>
+
+<xs:element name="OperaSumaResponse" type="tns:OperaSumaResponse"/>
+
+<xs:element name="SaberNumeroPrimo" type="tns:SaberNumeroPrimo"/>
+
+<xs:element name="SaberNumeroPrimoResponse" type="tns:SaberNumeroPrimoResponse"/>
+
+<xs:complexType name="SaberNumeroPrimo">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SaberNumeroPrimoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaSuma">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="arg1" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaSumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaMulti">
+<xs:sequence>
+<xs:element name="name" type="xs:int" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaMultiResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaDivision">
+<xs:sequence>
+<xs:element name="name" type="xs:int" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaDivisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaResta">
+<xs:sequence>
+<xs:element name="name" type="xs:int" minOccurs="0"/>
+<xs:element name="arg1" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="OperaRestaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
