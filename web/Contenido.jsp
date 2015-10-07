@@ -3,11 +3,6 @@
     Created on : 18-ago-2015, 21:09:05
     Author     : ESTACION
 --%>
-
-<%@page import="ws.ObjectFactory"%>
-<%@page import="ws.SaberNumeroPrimo"%>
-<%@page import="ws.OperaSuma"%>
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -37,7 +32,7 @@
           }else{
               Resultado="Si es primo";
           }
-        out.println("El nÃºmero Ingresado, " + Resultado + " !");
+        out.println("El número Ingresado, " + Resultado + " !");
       
 
     } catch (Exception ex) {
